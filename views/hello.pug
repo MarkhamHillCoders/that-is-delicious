@@ -1,8 +1,9 @@
 div.wrapper
-    p.hello Hello Hello
+    p.hello Hello Hello, my name is #{name}, &amp, my dog's name is #{dog}!
     span#happy Happy?
     p 
-        img.dog(src="dog.png" alt="Dog")
+        // img.dog(src="dog.png" alt="Dog's name is #{dog}")
+        img.dog(src="dog.png" alt=`Dog's name is #{dog}`)
 
 h2
     | Hello? 

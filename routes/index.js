@@ -5,7 +5,11 @@ const router = express.Router();
 router.get('/', (req, res) => {
   // res.send('Hey! It Works!');
   // res.json(req.query);
-  res.render("hello");
+  res.render("hello", {
+    name: 'Daniel',
+    dog: 'Hulk'
+    // req.query.dog - locals
+  });
 });
 
 router.get('reverse/:name', (req, res) =>{
